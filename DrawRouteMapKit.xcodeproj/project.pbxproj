@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D704E7B51EF50C296EE6B53 /* Pods_DrawRouteMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83B32F7B96D425F4C3159FF /* Pods_DrawRouteMapKit.framework */; };
 		CFA7DE9C20B67CFF00314992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA7DE9B20B67CFF00314992 /* AppDelegate.swift */; };
 		CFA7DE9E20B67CFF00314992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA7DE9D20B67CFF00314992 /* ViewController.swift */; };
 		CFA7DEA120B67CFF00314992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA7DE9F20B67CFF00314992 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06B168EFEC63649528236CAD /* Pods-DrawRouteMapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawRouteMapKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawRouteMapKit/Pods-DrawRouteMapKit.release.xcconfig"; sourceTree = "<group>"; };
+		5AF925BFEF023EEB35DCC963 /* Pods-DrawRouteMapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawRouteMapKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrawRouteMapKit/Pods-DrawRouteMapKit.debug.xcconfig"; sourceTree = "<group>"; };
+		C83B32F7B96D425F4C3159FF /* Pods_DrawRouteMapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawRouteMapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA7DE9820B67CFF00314992 /* DrawRouteMapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawRouteMapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA7DE9B20B67CFF00314992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFA7DE9D20B67CFF00314992 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D704E7B51EF50C296EE6B53 /* Pods_DrawRouteMapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		476C540DE6A541FD01B50AA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AF925BFEF023EEB35DCC963 /* Pods-DrawRouteMapKit.debug.xcconfig */,
+				06B168EFEC63649528236CAD /* Pods-DrawRouteMapKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		791F7F5D2740769DD125A192 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C83B32F7B96D425F4C3159FF /* Pods_DrawRouteMapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CFA7DE8F20B67CFF00314992 = {
 			isa = PBXGroup;
 			children = (
 				CFA7DE9A20B67CFF00314992 /* DrawRouteMapKit */,
 				CFA7DE9920B67CFF00314992 /* Products */,
+				476C540DE6A541FD01B50AA6 /* Pods */,
+				791F7F5D2740769DD125A192 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFA7DEAA20B67CFF00314992 /* Build configuration list for PBXNativeTarget "DrawRouteMapKit" */;
 			buildPhases = (
+				449087FF96B02DCC75F5C76A /* [CP] Check Pods Manifest.lock */,
 				CFA7DE9420B67CFF00314992 /* Sources */,
 				CFA7DE9520B67CFF00314992 /* Frameworks */,
 				CFA7DE9620B67CFF00314992 /* Resources */,
+				3C4F3C48DA77F577B288387E /* [CP] Embed Pods Frameworks */,
+				61CEA0E0D77C7D7FE193FA85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C4F3C48DA77F577B288387E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawRouteMapKit/Pods-DrawRouteMapKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		449087FF96B02DCC75F5C76A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrawRouteMapKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61CEA0E0D77C7D7FE193FA85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DrawRouteMapKit/Pods-DrawRouteMapKit-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawRouteMapKit/Pods-DrawRouteMapKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFA7DE9420B67CFF00314992 /* Sources */ = {
@@ -272,6 +355,7 @@
 		};
 		CFA7DEAB20B67CFF00314992 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AF925BFEF023EEB35DCC963 /* Pods-DrawRouteMapKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +371,7 @@
 		};
 		CFA7DEAC20B67CFF00314992 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B168EFEC63649528236CAD /* Pods-DrawRouteMapKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
